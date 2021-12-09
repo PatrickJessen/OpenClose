@@ -19,7 +19,7 @@ namespace OpenClose
         /// <param name="beanCapacity">how much can the bean container hold</param>
         /// <param name="liquid">type of liquid</param>
         /// <param name="beanAmount">how many beans to put in</param>
-        public CoffeeMachine(int waterCapacity, int beanCapacity, Liquid liquid, int beanAmount)
+        public CoffeeMachine(int waterCapacity = 20, int beanCapacity = 20, Liquid liquid, int beanAmount = 0)
         {
             this.liquid = liquid;
             this.beanAmount = beanAmount;

@@ -8,7 +8,7 @@ namespace OpenClose
     {
         public static void Main(string[] args)
         {
-            Machine coffeeMachine = new CoffeeMachine(20, 14, new Water(10), 20);
+            Machine coffeeMachine = new CoffeeMachine(20, 14, new Tea(10), 0);
             Thread t = new Thread(coffeeMachine.Start);
             t.Start();
             Thread.Sleep(6000);
