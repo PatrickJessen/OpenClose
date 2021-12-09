@@ -56,12 +56,11 @@ namespace OpenClose
         /// <summary>
         /// Gets the brewed coffee ones its done
         /// </summary>
-        /// <param name="amount"></param>
         /// <returns>returns the brewed coffee if its ready</returns>
-        public Liquid CoffeeBrewed(int amount = 10)
+        public Liquid CoffeeBrewed()
         {
             if (IsReady())
-                return new Coffee(amount);
+                return liquid;
             return null;
         }
 
